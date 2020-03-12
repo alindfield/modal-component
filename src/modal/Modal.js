@@ -6,7 +6,7 @@ const Modal = props => {
     if (props.styles) styles.push(props.styles);
     return (
         <React.Fragment>
-            <div className="Backdrop" onClick={props.clicked} />
+            <div className="Backdrop" onClick={props.backclicked} />
             <div onClick={props.clicked} className={styles.join(' ')}>
                 {props.children}
             </div>
