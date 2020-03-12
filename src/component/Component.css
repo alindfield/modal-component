@@ -1,0 +1,19 @@
+.Component {
+    display: flex;
+    flex-direction: column;
+}
+
+.Component h2 {
+    text-decoration: underline;
+}
+
+.Component th {
+    border: 1px solid black;
+    margin: 0px;
+    width: 150px;
+}
+
+.Component td {
+    border: 1px solid black;
+    margin: 0px;
+}

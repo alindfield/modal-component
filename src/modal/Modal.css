@@ -1,0 +1,56 @@
+.Modal {
+    position: fixed;
+    z-index: 100;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 1px black;
+    padding: 16px;
+    left: 400px;
+    top: 400px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-out; 
+    max-width: 60%;
+}
+
+.Modal2 {
+    position: fixed;
+    transition: opacity 300ms ease-out;
+    max-width: 400px;
+    width: auto;
+    line-height: 20px;
+    padding: 10px;
+    font-size: 0.8em;
+    text-align: center;
+    color: black;
+    background: white;
+    margin: 5px;
+    border-radius: 5px;
+    text-shadow: rgba(0, 0, 0, 0.1) 1px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 1px 2px 0px;
+    border: 1px solid black;
+    z-index: 200;
+}
+
+.Modal2::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 7px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    top: 10px;
+    left: -14px;
+}
+
+.Modal2::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 6px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+    top: 11px;
+    left: -12px;
+}
