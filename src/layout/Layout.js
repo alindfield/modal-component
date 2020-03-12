@@ -15,7 +15,7 @@ const Layout = () => {
         setModalActive(false);
     };
 
-    const modal = modalActive ? <Modal clicked={endClick} styles="Modal2"><Component /></Modal> : null;
+    const modal = modalActive ? <Modal clicked={endClick}><Component /></Modal> : null;
 
     return (
         <div>
